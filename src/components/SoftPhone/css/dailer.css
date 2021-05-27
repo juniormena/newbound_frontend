@@ -1,0 +1,68 @@
+.dailer {
+    max-width: 320px;
+    background-color: #2F353A;
+    margin: 15px;
+    border-radius:10px ;
+}
+
+.dailer .number {
+    padding: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #f2f2f4;
+    overflow: hidden;
+}
+
+.dailer .number span, input {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.dailer .numbers {
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dailer .numbers .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.dailer .numbers .row a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    text-decoration: none;
+    border-radius: 70px;
+    background-color: #f2f2f4;
+    margin: 10px;
+    color: #2f353a;
+}
+
+.dailer .numbers .row a:hover {
+    color: white;
+    background-color: #93a2ff;
+}
+
+.dailer .btnLlamar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4dbd74;
+    color: white;
+    font-size: 26px;
+    margin: 35px 35px 0;
+    padding: 10px 0;
+}
+
+.dailer .btnLlamar:hover {
+    background-color: #93a2ff;
+}

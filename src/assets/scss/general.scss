@@ -1,0 +1,562 @@
+@import 'musicaenespera';
+@import 'LoadingStyles';
+@import 'formMantenimientoEstado';
+@import 'MusicaUpdate';
+@import 'MusicaEsperaCarpeta';
+
+$table-font-size:0.8rem;
+$gradiente-color:linear-gradient(90deg, rgba(255, 0, 168, 1) 0%, rgba(72, 36, 102, 1) 48%, rgba(0, 212, 255, 1) 100%);
+.daterangepicker{
+  z-index: 10;
+}
+.center{
+  text-align: center;
+}
+
+.base-background-gradient {
+  background: $gradiente-color !important;
+}
+
+.bg-navbar {
+  background: #fff;
+}
+
+.navbar__toggler-ml {
+  margin-left: 9rem;
+}
+
+.navbar-nav__ml {
+  margin-left: 0.9rem;
+}
+
+.sidenav__display {
+  display: none;
+}
+
+/* Style page content */
+.main {
+  /* Same as the width of the sidebar */
+  padding: 3.9rem 1rem;
+}
+
+.main__move {
+  padding-left: 17.7rem;
+}
+
+.dropdown-menu {
+  left: -5.5rem !important;
+}
+
+.navbar__toggler {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 2px solid #e4e5e6;
+  border-radius: 0.25rem;
+}
+
+.navbar-link__icon {
+  margin: 0 0.5rem 0 0;
+  font-size: 20px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer__move{
+  left:20%;
+  width: 80%;
+}
+
+.sidebar__icon-color{
+  color: rgb(0,255,255) !important;
+}
+
+.app-sidebar.sidebar-text-light .vertical-nav-menu ul:before {
+  background: #b35cc4;
+}
+
+.app-sidebar.sidebar-text-light .app-sidebar__heading {
+  color: #ffffff;
+}
+
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a {
+  color: #ffffff;
+}
+
+.app-sidebar.sidebar-text-light .vertical-nav-menu ul>li>a {
+  color: #ffffff;
+}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a:hover i.metismenu-icon {
+  opacity: 1;
+}
+
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a i.metismenu-icon {
+  opacity: 1;
+}
+
+.newboundPurpleColor{
+  color: #F310FF;
+}
+
+.estadoColaFontSize{
+  font-size: 1rem;
+}
+
+.estadoColaFontColor{
+  color:#82218D;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.avatar{
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+.avatar .avatar-status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50em;
+}
+
+.resetmargin{
+  margin:0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .footer__move{
+    left:20%;
+    width: 80%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footer__move{
+    left:20%;
+    width: 80%;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footer__move{
+    left:20%;
+    width: 80%;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footer__move{
+    left:24%;
+    width: 76%;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1024px) {
+  .footer__move{
+    left:14.5%;
+    width: 86%;
+  }
+}*/
+
+@media only screen and (min-width: 1200px) {
+  .footer__move{
+    left:22.5%;
+    width: 78%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .footer__move{
+    left:20%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .footer__move{
+    left:19.5%;
+    width: 81%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .footer__move{
+    left:16.5%;
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__move{
+    left:14.5%;
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .footer__move{
+    left:14.5%;
+    width: 100%;
+  }
+}
+
+.table-responsive--font-size-normal {
+  font-size: $table-font-size;
+}
+
+.make-a-pointer {
+  cursor: pointer;
+}
+
+.tr-selected:nth-child(even) {
+  background-color: #965495 !important;
+}
+
+.tr-selected:nth-child(odd) {
+  background-color: #4B2468 !important;
+}
+
+.tr-link:hover {
+  color: #01d0fb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.password-number-mask {
+  -webkit-text-security: disc;
+  -moz-webkit-text-security: disc;
+  -moz-text-security: disc;
+}
+
+.bs-stepper-circle {
+  background-color: #6a1e72 !important;
+}
+
+.ml-n2 {
+  margin-left: -1.8rem !important;
+}
+
+.scrollbar-sidebar--overflow {
+  overflow-y: auto;
+}
+
+.tab-content {
+  margin-top: -0.97rem;
+  border: 1px solid #c8ced3;
+  border-top-style: none;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 25px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.input-search {
+  background-image: url("../images/searchicon.png");
+  background-position: 0.4rem 0.5rem;
+  background-repeat: no-repeat;
+  padding: 0.4rem 6rem 0.5rem 2rem !important;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .main {
+    margin-left: 0;
+    padding: 2.9rem 0;
+  }
+}
+
+//Slider Volumen MusicaEspera
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: hsl(300, 83%, 41%);
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  background: hsl(300, 83%, 41%);
+  cursor: pointer;
+  border: none;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  background: hsl(300, 83%, 41%);
+  cursor: pointer;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  background: hsl(300, 89%, 51%);
+  cursor: pointer;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  -webkit-appearance: none;
+  background: hsl(300, 83%, 41%);
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb:hover {
+  -webkit-appearance: none;
+  background: hsl(300, 83%, 41%);
+  cursor: pointer;
+}
+
+//Slider Volumen MusicaEspera
+
+//Sweet Alert Styles
+.swal-icon {
+  font-size: 13px;
+}
+
+.confirmBtn {
+  font-size: 0.95rem !important;
+  font-weight: 700;
+}
+
+.cancelBtn {
+  font-size: 0.95rem !important;
+  font-weight: 700;
+}
+
+//ToolTips 
+
+
+.mytooltip>.tooltip-inner {
+
+  background: #00B3E3;
+  text-align: left;
+}
+
+.mytooltip>.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: #00B3E3;
+}
+
+.mytooltip>.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  border-right-color: #00B3E3;
+}
+
+.mytooltip>.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #00B3E3;
+}
+
+.mytooltip>.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: #00B3E3;
+}
+
+#status {
+  width: 100%;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#status .userStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#status .userStatus a  {
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+  border: 4px solid white;
+  z-index: 999;
+  background-color: white;
+}
+
+#status .userStatus button {
+  line-height: 28px;
+  margin-left: -26px;
+  //color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btnCola{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  border-left: 2px solid #f2f2f4;
+  border-right: 2px solid #f2f2f4;
+  flex-shrink: 0;
+  text-decoration: none !important;
+  margin-right: 1.5rem;
+
+  i{
+    font-size: 22px;
+  }
+}
+
+.btnCola:hover {
+  background-color: #93A2FF;
+  color: white;
+}
+
+.btnPauseCola{
+  font-size: 32px;
+}
+
+.pauseMenu {
+  position: relative;
+}
+
+.pauseMenu .pauseSubMenu {
+  width: 390px;
+  padding: 23px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #93A2FF;
+  transition: all 0.25s ease;
+  //1254
+}
+
+.pauseMenu .pauseSubMenu.open {
+  display: block;
+}
+
+.pauseMenu .pauseSubMenu h3 {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.pauseMenu .pauseSubMenu a.btnOp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-size: 12px;
+
+}
+
+.pauseMenu .pauseSubMenu a.btnOp .ico {
+  width: 20px;
+  margin: 17px 20px;
+}
+
+.pauseMenu .pauseSubMenu a.btnOp span {
+  width: 100%;
+  border-left: 1px solid #93A2FF;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #0b0c0d;
+}
+
+.pauseMenu .pauseSubMenu a.btnOp small {
+  font-size: 12px;
+  color: #0b0c0d;
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+#btnPauseWork, {
+  display: flex;
+  width: 90px;
+  height: 50px;
+  border-left: 2px solid #f2f2f4;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+  text-decoration: none;
+
+  i{
+    font-size: 22px;
+  }
+}
+
+#btnPauseWork:hover, #btnLogout:hover, #btnPauseWork.active {
+  background-color: #93A2FF;
+  color: white;
+}
+
+
+//PopoverComponent
+
+.mypop>.tooltip-inner {
+  // width: 100%;
+  max-width: 500px;
+  background: #00B3E3;
+  font-size: 13px;
+  text-align: left;
+
+}
+
+@media only screen and (max-width: 859px) {
+
+  .mypop>.tooltip-inner {
+    max-width: 400px;
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  .mypop>.tooltip-inner {
+    max-width: 300px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+
+  .mypop>.tooltip-inner {
+    max-width: 250px;
+    font-size: 10px;
+  }
+}

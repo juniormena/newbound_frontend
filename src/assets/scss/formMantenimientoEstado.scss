@@ -1,0 +1,36 @@
+.formMantenimientoEstado{
+
+       .colorInput{
+           height: 38px;
+           border: none;
+           cursor: pointer;
+           
+       }
+       .customSelect{
+        width: 85%;
+        //max-width: 190px;
+       
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .input-group-append{
+        width: 15%;
+      }
+}
+ @media only screen and (max-width: 991px) {
+    .formMantenimientoEstado{
+
+        .customSelect{
+            width: 90%;
+            //max-width: 190px;
+           
+            text-align: center;
+            font-size: 18px;
+          }
+    
+          .input-group-append{
+            width: 10%;
+          }
+    }
+  }

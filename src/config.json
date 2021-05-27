@@ -1,0 +1,6 @@
+{
+    "socketApiURL":"http://192.168.1.45:3001",
+    "httpApiURL": "http://192.168.1.45",
+    "appVersion": "2021.05.17"
+}
+

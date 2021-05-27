@@ -1,0 +1,136 @@
+ #directory {
+    width: 95%;
+    padding: 20px 10px;
+    margin:10px 0 ;
+    background-color: #2F353A;
+ 
+}
+
+
+#directory .header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 0 30px;
+}
+
+
+#directory ul, #directory ul li {
+    list-style: none;
+    padding: 0;
+}
+
+#directory  .tab-contentUl .tab-contentli{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5px;
+    background-color: #353836;
+}
+
+
+
+#directory .contactoInfo {
+   padding-top: 15px;
+    width: 100%;
+    background-color: #2F353A;
+    height: 100%;  
+    max-height: 430px;
+    overflow:auto;
+
+}
+
+#directory .contactoInfo .tab-content {
+    border: none;
+    height: 100%; 
+   
+}
+
+#directory  .nav-tabs {
+    border-color: #8F9DF6;
+}
+
+#directory .nav-tabs li a {
+    color: #8F9DF6;
+}
+
+
+
+#directory ul li .icoUser {
+    width: 20px;
+    
+}
+
+
+#directory ul li .info {
+    display: flex;
+    justify-content: space-between;
+  /*   align-items: flex-start; */
+ /*    flex-direction: column; */
+    font-size: 14px;
+    width: 90%;
+    margin: 15px;
+
+}
+
+#directory ul li .info .name span {
+    color: #93A2FF;
+}
+
+#directory ul li .info .name  .number {
+    color: #fff;
+}
+
+#directory ul li .btnCall img{
+    width: 35px;
+    display: flex;
+    justify-self: self-end;
+}
+
+#directory ul li .btnCall  {
+    width: 30px;
+}
+
+#directory ul li .btnCall:hover {
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+.btnCallContactoImage:hover{
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    #directory ul li  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #directory ul li .info {
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+}
+#directory ::-webkit-scrollbar {
+    width: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#directory ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#directory ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    opacity: 0.5;
+    cursor: pointer;
+}

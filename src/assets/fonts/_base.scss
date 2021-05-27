@@ -1,0 +1,46 @@
+@import  "montserrat/montserrat";
+
+.text-font-light{
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+.text-regular{
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.text-medium{
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.text-semibold{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+.text-bold{
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.text-mediumitalic{
+    font-family: 'Montserrat-MediumItalic', sans-serif;
+}
+
+.text-bolditalic{
+    font-family: 'Montserrat-BoldItalic', sans-serif;
+}
+
+.text-semibolditalic{
+    font-family: 'Montserrat-SemiBoldItalic', sans-serif;
+}
+
+.text-mediumiboldtalic{
+    font-family: 'Montserrat-BoldItalic', sans-serif;
+}
+
+.text-lightitalic{
+    font-family: 'Montserrat-LightItalic', sans-serif;
+}
+
+//Add regular font to all divs
+div{
+    font-family: 'Montserrat-Regular', sans-serif;
+}

@@ -1,0 +1,14 @@
+<svg id="object" height="400" width="400">
+  <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+    <rect y="0" width="1" height="1" fill="white" />
+    <circle cx=".5" cy=".5" r="0.495" fill="black" />
+  </mask>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e42b52;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7e4c98;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2668ac;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="200" r="200" stroke-width="0" mask="url(#masking)" fill="url(#grad1)" />
+</svg>

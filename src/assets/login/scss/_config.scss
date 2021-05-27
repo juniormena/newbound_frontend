@@ -1,0 +1,127 @@
+// variables config
+
+
+// HTML default values
+*, *:before, *:after {
+	box-sizing: inherit;
+}  // *
+
+html, body {
+	box-sizing: inherit;
+	height: 100%;
+  // overflow: auto;
+} // html, body
+
+
+div.login, #root {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: black;
+	/*font-family: 'Syncopate', sans-serif;*/
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+} // body
+
+h1, h2, h3, h4, h5 {
+  // font-family: 'Playfair Display', serif;
+} // h1, h2, h3, h4, h5
+
+a {
+	transition: all .5s;
+	text-decoration: none;
+} // a
+
+body.menu-open {
+	height: 100vh;
+	overflow: hidden;
+} // body.menu-open
+
+body.home-page, body.bird-detail {
+	background-image: none;
+}
+
+// ID's default values
+#pageContent {
+	opacity: 0;
+	width: 100%;
+	height: auto;
+	overflow-x : hidden;
+	box-sizing: border-box;
+} // pageContent
+
+// classes default values
+.list_no {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0;
+		padding: 0;
+  } // .list-no li
+} // .list-no
+
+.banner {
+  p { padding: 0; } // p
+} // banner
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+} // banner
+
+.float_absolute {
+	position: absolute;
+	left: inherit;
+	top: inherit;
+	right: inherit;
+	bottom: inherit;
+	z-index: 0;
+} //float_absolute
+
+.modaal-fullscreen .modaal-close {
+	z-index: 99999!important;
+}
+
+.pace {
+	transition: all 4s;
+}
+
+.pace.pace-active {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background: url('../images/gradient.svg') no-repeat center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.pace-progress {
+		width: 184px;
+		height: 184px;
+		display: block;
+		background: url('../images/loading.svg') no-repeat center;
+		background-size: 100%;
+		transform: none !important;
+		animation: rotation 2s infinite linear;
+	} //
+} //
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}

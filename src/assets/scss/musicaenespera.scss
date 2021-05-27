@@ -1,0 +1,75 @@
+.musicaenespera {
+//overflow: scroll;
+
+  hr {
+    width: 100%;
+    background-color: #b6b5b5;
+  }
+
+  #aleatorio {
+    cursor: pointer;
+  }
+
+  .contenedores {
+    display: flex;
+    align-self: flex-start;
+
+    .btn-box {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .meLista {
+
+
+    tr {
+      border: 1px solid #c6c6c6;
+      padding: 5px;
+  
+    }
+
+    td {
+      .operaciones {
+        padding: 2px 5px;
+
+        i {
+          font-size: 5px;
+         
+        }
+      }
+
+      .posicion {
+        background-color: purple;
+        color: white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        margin: auto;
+      }
+
+      .nombre {
+   
+        
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+
+
+.pagination {
+  width: 100%;
+
+
+  display: flex;
+  justify-content: center; 
+
+}

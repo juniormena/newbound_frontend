@@ -1,0 +1,137 @@
+#llamadaEncurso {
+    width: 95%;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+#llamadaEncurso .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #2F353A;
+}
+
+#llamadaEncurso .top .ico {
+    width: 84px;
+}
+
+#llamadaEncurso .top .label {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#llamadaEncurso .top .info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.name {
+    color: #93A2FF;
+}
+
+#llamadaEncurso .top .info .number {
+    font-size: 16px;
+}
+
+#llamadaEncurso .top .time {
+    font-size: 28px;
+    font-weight: bold;
+    color: #93A2FF;
+}
+
+#llamadaEncurso .top .btnClose {
+    width: 84px;
+    height: 84px;
+    display: flex;
+}
+
+#llamadaEncurso .top .btnClose:hover {
+    transform: rotate(20deg);
+}
+
+#llamadaEncurso .options {
+    background-color: #2F353A;
+    padding: 15px 20px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#llamadaEncurso .options a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #2F353A;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    margin:2px;
+}
+
+#llamadaEncurso .options a:hover {
+    background-color: #93A2FF;
+    color: white;
+}
+
+#llamadaEncurso .options a i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.buttons a img:hover{
+    transform: rotate(20deg);
+}
+
+.btnAttendedTransfer {
+    -webkit-animation: NAME-YOUR-ANIMATION 1s infinite; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION 1s infinite; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION 1s infinite; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes NAME-YOUR-ANIMATION {
+    0%, 49% {
+        background-color: #05C9F5;
+    }
+    50%, 100% {
+        background-color: #e50000;
+    }
+}
+
+@media (max-width: 720px) {
+    
+    #llamadaEncurso .top {
+        flex-direction: column;
+    }
+
+    #llamadaEncurso .top .ico {
+        width: 64px;
+        margin-bottom: 20px;
+    }
+
+    #llamadaEncurso .top .label {
+        margin-bottom: 10px;
+    }
+
+    #llamadaEncurso .top .time {
+        margin: 10px 0;
+    }
+
+    #llamadaEncurso .options a {
+        width:20%;
+        font-size: 14px;
+    }
+
+    #llamadaEncurso .options a i {
+        display: none;
+    }
+}

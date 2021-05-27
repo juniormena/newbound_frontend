@@ -1,0 +1,75 @@
+#history {
+    width: 95%;
+    background-color: #2F353A;
+    padding: 20px 10px;
+    overflow: hidden;
+    margin: 10px 0 ;
+    flex-shrink: 0;
+}
+
+#history .header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 0 30px;
+}
+
+#history ul, #history ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#history ul li {
+    background-color: #353836;
+    margin-bottom: 4px;
+    /* font-size: 15px; */
+    display: flex;
+    padding: 20px 10px;
+
+}
+
+#history ul li:hover {
+    background-color: #030c29;
+}
+
+#history ul li .info  {
+   margin: 0 40px;
+   
+}
+
+
+#history ul li .icoPhone {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+#history ul li .icoCallMissed {
+    width: 26px;
+    height: 16px;
+}
+
+#history ul li .name {
+    font-size: 13.5px;
+    
+}
+#history ul li .tipoLlamada{
+    font-size: 14px;
+   
+}
+
+#history ul li .time{
+    font-size: 13.5px;
+   
+}
+
+
+#history ul li .name span {
+    color: #93A2FF;
+}
+
+@media (max-width: 770px) {
+    #history ul li {
+        flex-direction: column;
+    }
+}
