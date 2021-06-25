@@ -102,6 +102,10 @@ export function convertImageToBase64(ImageUrl, callback) {
       };
       reader.readAsDataURL(xhr.response);
     };
+    xhr.open("GET", ImageUrl);
+    xhr.responseType = "blob";
+    xhr.send();
+    xhr.close();
   } catch (err) {
     return ImageUrl;
   }
