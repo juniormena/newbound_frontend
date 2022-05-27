@@ -20,7 +20,7 @@
     "jwt-decode": "^3.1.2",
     "metismenu": "^3.0.6",
     "moment": "^2.29.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-audio-player": "^0.14.0",
